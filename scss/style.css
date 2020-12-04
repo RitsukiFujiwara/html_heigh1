@@ -2,6 +2,7 @@
 html, body {
   width: 100%;
   color: #777;
+  font-size: 16px;
   line-height: 1.6;
   font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -17,9 +18,9 @@ p, a {
 
 a {
   color: #777;
+  text-decoration: none;
   -webkit-transition: .3s;
   transition: .3s;
-  text-decoration: none;
 }
 
 a:hover {
@@ -192,7 +193,7 @@ img {
 }
 
 .hero {
-  background-image: url("../images//hero.jpg");
+  background-image: url("../images/hero.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -218,8 +219,7 @@ img {
 
 @media screen and (max-width: 414px) {
   .hero-title {
-    -webkit-text-emphasis: center;
-            text-emphasis: center;
+    text-align: center;
   }
 }
 
@@ -236,7 +236,7 @@ img {
 .container {
   width: 980px;
   margin-left: auto;
-  margin-left: auto;
+  margin-right: auto;
   padding-top: 80px;
   padding-bottom: 120px;
 }
@@ -247,7 +247,7 @@ img {
   }
 }
 
-.containerfluid {
+.container-fluid {
   width: 100%;
 }
 
@@ -275,13 +275,13 @@ img {
 
 .container-ornament .container-title span {
   display: inline-block;
-  background-color: #fff;
+  background: #fff;
   padding: 0 10px;
   position: relative;
   z-index: 1;
 }
 
-.container-ornament .container-title::before, .container-ornament .container-title:after {
+.container-ornament .container-title:before, .container-ornament .container-title:after {
   border-top: 1px solid #2e1f1a;
   content: "";
   display: block;
@@ -327,7 +327,7 @@ img {
   font-size: 14px;
 }
 
-panel {
+.panel {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fff;
@@ -336,13 +336,13 @@ panel {
   transition: .5s;
 }
 
-panel-hover {
+.panel-hover {
   display: inline-block;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-panel-hover:hover {
+.panel-hover:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -351,25 +351,25 @@ panel-hover:hover {
   transition: .5s;
 }
 
-panel-border {
+.panel-border {
   border-radius: 5px;
   border: 5px solid #f6f5f4;
 }
 
-panel-head, panel-foot {
+.panel-head, .panel-foot {
   padding: 10px;
 }
 
-panel-head {
+.panel-head {
   text-align: center;
   color: #e3a8b1;
 }
 
-panel-active {
+.panel-active {
   border: 5px solid #e3a8b1;
 }
 
-panel-badge {
+.panel-badge {
   background: #e37b89;
   color: #fff;
   position: absolute;
@@ -389,21 +389,21 @@ panel-badge {
 }
 
 @media screen and (max-width: 414px) {
-  panel-badge {
+  .panel-badge {
     top: -20px;
     right: -13px;
   }
 }
 
-panel-group {
+.panel-group {
   margin-right: -15px;
 }
 
-panel-group-float {
+.panel-group-float {
   overflow: hidden;
 }
 
-panel-group-flex {
+.panel-group-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +411,7 @@ panel-group-flex {
       flex-wrap: wrap;
 }
 
-panel-group .panel {
+.panel-group .panel {
   float: left;
   margin-right: 15px;
   margin-bottom: 15px;
@@ -419,22 +419,22 @@ panel-group .panel {
           box-sizing: border-box;
 }
 
-panel-staff {
+.panel-staff {
   width: calc(25% - 15px);
 }
 
 @media screen and (max-width: 414px) {
-  panel-staff {
+  .panel-staff {
     width: calc(50% - 15px);
   }
 }
 
-panel-cource {
+.panel-cource {
   width: calc(33.3% - 15px);
 }
 
 @media screen and (max-width: 414px) {
-  panel-cource {
+  .panel-cource {
     width: 100%;
     margin: 0 auto 15px auto;
   }
